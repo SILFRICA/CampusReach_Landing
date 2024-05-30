@@ -51,7 +51,7 @@ function App() {
         <h4 className="font-bold md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
-        <div className="md:max-w-[75%] grid md:grid-cols-4 grid-cols-3 gap-4 place-content-center place-items-center border border-red-900 founders-box">
+        <div className="md:max-w-[75%] grid md:grid-cols-4 grid-cols-3 gap-4 place-content-center place-items-center founders-box">
           <div className="md:w-52 w-28 h-16 bg-[#0B55B4] flex items-center justify-center rounded-[20px]">
             <img src={JayHC} alt="Jay Healthcare" className="object-contain w-[90%] md:w-[fit-content]"/>
           </div>
