@@ -66,11 +66,11 @@ function App() {
               className="object-contain w-[90%] md:w-[fit-content]"
             />
           </div>
-          <div className="flex items-center justify-center">
-            <img src={Raize} alt="Raize" className="w-2/3 h-16 md:w-auto" />
+          <div className="flex items-center justify-center rounded-[20px]">
+            <img src={Raize} alt="Raize" className="w-2/3 h-16 md:w-auto rounded-[20px]" />
           </div>
-          <div className="flex items-center justify-center">
-            <img src={Muzingo} alt="Muzingo" className="w-2/3 h-16 md:w-auto" />
+          <div className="flex items-center justify-center rounded-[20px]">
+            <img src={Muzingo} alt="Muzingo" className="w-2/3 h-16 md:w-auto rounded-[20px]" />
           </div>
           <div className="w-[fit-content] h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px]">
             <img src={Sambe1} alt="Sambe1" className="w-1/3" />
@@ -87,14 +87,14 @@ function App() {
             <img
               src={Genie}
               alt="Genius Club"
-              className="w-2/3 h-16 md:w-auto"
+              className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center rounded-[20px]">
             <img
               src={Charisol}
               alt="Charisol"
-              className="w-2/3 h-16 md:w-auto"
+              className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
         </div>
