@@ -19,8 +19,8 @@ import MenuBtn from "./components/MenuBtn";
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center justify-between gap-20 px-4 py-4 mb-8 md:mx-8 top-section">
-        <header className="relative flex items-center justify-between w-full gap-10">
+      <div className="h-screen py-4 mb-8 md:mx-8 top-section">
+        <header className="relative h-[10%] flex items-center justify-between w-full gap-10">
           <div className="flex items-center gap-3">
             <img src={Logo} alt="Logo" />
             <h1 className="text-sm font-bold md:text-2xl text-forest-green-900">
@@ -33,27 +33,35 @@ function App() {
           </div>
           <MenuBtn />
         </header>
-        <div className="flex flex-col items-center text-center md:w-5/6 hero-section">
-          <h1 className="text-3xl font-bold lg:text-6xl">
-            Unlock <span className="text-forest-green-500">10x</span> Growth in
-            Campus Communities
-          </h1>
-          <br />
-          <p className="md:w-[75%] text-center font-medium">
-            Leverage student marketers/influencers across 25 campuses to drive
-            affordable and time-effective campaigns. We manage your campaign
-            from start to finish to achieve your marketing goals in campus
-            communities
-          </p>
-          <br />
-          <Button kind="button" title="Get a free proposal" />
+        <div className="flex h-[90%] flex-col justify-center items-center text-center hero-section">
+          <div className="flex flex-col items-center justify-center w-2/3">
+            <h1 className="text-3xl font-bold lg:text-6xl">
+              Unlock <span className="text-forest-green-500">10x</span> Growth
+              in Campus Communities
+            </h1>
+            <br />
+            <p className="font-medium text-center">
+              Leverage student marketers/influencers across 25 campuses to drive
+              affordable and time-effective campaigns. We manage your campaign
+              from start to finish to achieve your marketing goals in campus
+              communities
+            </p>
+            <br />
+            <Button kind="button" title="Get a free proposal" />
+          </div>
         </div>
-        <h4 className="font-bold md:text-2xl">
+      </div>
+      <div className="flex flex-col w-full gap-20 h-80 start-ups">
+        <h4 className="text-lg font-bold text-center md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
-        <div className="md:max-w-[75%] grid md:grid-cols-4 grid-cols-3 gap-4 place-content-center place-items-center founders-box">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-content-center place-items-center md:max-w-[75%] mx-auto founders-box">
           <div className="md:w-52 w-28 h-16 bg-[#0B55B4] flex items-center justify-center rounded-[20px]">
-            <img src={JayHC} alt="Jay Healthcare" className="object-contain w-[90%] md:w-[fit-content]"/>
+            <img
+              src={JayHC}
+              alt="Jay Healthcare"
+              className="object-contain w-[90%] md:w-[fit-content]"
+            />
           </div>
           <div className="flex items-center justify-center">
             <img src={Raize} alt="Raize" className="w-2/3 h-16 md:w-auto" />
@@ -63,17 +71,28 @@ function App() {
           </div>
           <div className="w-[fit-content] h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px]">
             <img src={Sambe1} alt="Sambe1" className="w-1/3" />
-            <img src={Sambe2} alt="Sambe2" className="w-1/2"/>
+            <img src={Sambe2} alt="Sambe2" className="w-1/2" />
           </div>
-          {/* next founder logos */}
           <div className="flex items-center justify-center">
-            <img src={Tubda} alt="Tubda" className="rounded-[17px] w-2/3 h-16 md:w-auto" />
+            <img
+              src={Tubda}
+              alt="Tubda"
+              className="rounded-[17px] w-2/3 h-16 md:w-auto"
+            />
           </div>
           <div className="flex items-center justify-center rounded-[20px]">
-            <img src={Genie} alt="Genius Club" />
+            <img
+              src={Genie}
+              alt="Genius Club"
+              className="w-2/3 h-16 md:w-auto"
+            />
           </div>
           <div className="flex items-center justify-center">
-            <img src={Charisol} alt="Charisol" className="h-16" />
+            <img
+              src={Charisol}
+              alt="Charisol"
+              className="w-2/3 h-16 md:w-auto"
+            />
           </div>
         </div>
       </div>
