@@ -19,28 +19,30 @@ import MenuBtn from "./components/MenuBtn";
 function App() {
   return (
     <>
-      <div className="h-screen py-4 mb-8 md:mx-20 top-section">
-        <header className="relative h-[10%] flex items-center justify-between w-full gap-10">
-          <div className="flex items-center gap-3">
-            <img src={Logo} alt="Logo" />
-            <h1 className="text-sm font-bold md:text-2xl text-forest-green-900">
-              CampusReach
-            </h1>
-          </div>
-          <div className="absolute flex-col justify-between hidden gap-8 md:flex md:w-2/3 md:flex-row md:relative">
-            <Navbar />
-            <Button kind="button" title="Get a proposal" />
-          </div>
-          <MenuBtn />
-        </header>
+      <div className="h-screen py-4 mb-8 top-section">
+        <div className="relative h-[10%] flex justify-center items-center w-full">
+          <header className="flex lg:w-[80%] w-full justify-between max-md:mx-4">
+            <div className="flex items-center gap-3">
+              <img src={Logo} alt="Logo" />
+              <h1 className="text-sm font-bold md:text-2xl text-forest-green-900">
+                CampusReach
+              </h1>
+            </div>
+            <div className="absolute flex-col justify-between hidden gap-8 lg:flex lg:w-2/3 lg:flex-row lg:relative">
+              <Navbar />
+              <Button kind="button" title="Get a proposal" />
+            </div>
+            <MenuBtn />
+          </header>
+        </div>
         <div className="flex h-[90%] flex-col justify-center items-center text-center hero-section">
           <div className="flex flex-col items-center justify-center w-full xl:w-2/3">
-            <h1 className="text-3xl font-bold xl:text-7xl lg:text-6xl">
+            <h1 className="text-3xl font-bold lg:text-6xl">
               Unlock <span className="text-forest-green-500">10x</span> Growth
               in Campus Communities
             </h1>
             <br />
-            <p className="font-medium text-center text-cr-gray-600 lg:text-2xl xl:text-3xl xl:w-5/6">
+            <p className="font-medium text-center text-cr-gray-600 lg:text-2xl xl:max-w-5/6">
               Leverage student marketers/influencers across 25 campuses to drive
               affordable and time-effective campaigns. We manage your campaign
               from start to finish to achieve your marketing goals in campus
