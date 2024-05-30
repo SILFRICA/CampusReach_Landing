@@ -1,0 +1,1 @@
+export const navbarData = ["Overview", "Our channels", "How it works", "Pricing", "Creators"];
