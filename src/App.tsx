@@ -14,23 +14,27 @@ import AccelCard from "./components/accelCard/AccelCard";
 import GroupImg1 from "./assets/Group 420.png";
 import GroupImg2 from "./assets/Group 421.png";
 import PieChart from "./assets/Group 7.svg";
+import MenuBtn from "./components/MenuBtn";
 
 function App() {
   return (
     <>
       <div className="flex flex-col items-center justify-between w-full gap-10 px-4 py-4 mb-8 md:h-screen top-section">
-        <header className="flex items-center w-full justify-evenly">
+        <header className="relative flex items-center justify-between w-full gap-10">
           <div className="flex items-center gap-3">
             <img src={Logo} alt="Logo" />
-            <h1 className="text-2xl font-bold text-forest-green-900">
+            <h1 className="text-sm font-bold md:text-2xl text-forest-green-900">
               CampusReach
             </h1>
           </div>
-          <Navbar />
-          <Button kind="button" title="Get a proposal" />
+          <div className="absolute flex-col justify-between hidden gap-8 md:flex md:w-2/3 md:flex-row md:relative">
+            <Navbar />
+            <Button kind="button" title="Get a proposal" />
+          </div>
+          <MenuBtn />
         </header>
         <div className="flex flex-col items-center text-center md:w-5/6 hero-section">
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-3xl font-bold md:text-6xl">
             Unlock <span className="text-forest-green-500">10x</span> Growth in
             Campus Communities
           </h1>
@@ -44,26 +48,26 @@ function App() {
           <br />
           <Button kind="button" title="Get a free proposal" />
         </div>
-        <h4 className="text-2xl font-bold">
+        <h4 className="font-bold md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
-        <div className="max-w-[75%] flex flex-wrap justify-center items-center gap-10 founders-box">
-          <div className="w-52 h-16 bg-[#0B55B4] flex items-center justify-center rounded-[20px]">
-            <img src={JayHC} alt="Jay Healthcare" />
+        <div className="md:max-w-[75%] grid md:grid-cols-4 grid-cols-3 gap-4 place-content-center place-items-center border border-red-900 founders-box">
+          <div className="md:w-52 w-28 h-16 bg-[#0B55B4] flex items-center justify-center rounded-[20px]">
+            <img src={JayHC} alt="Jay Healthcare" className="object-contain w-[90%] md:w-[fit-content]"/>
           </div>
           <div className="flex items-center justify-center">
-            <img src={Raize} alt="Raize" className="h-16" />
+            <img src={Raize} alt="Raize" className="w-2/3 h-16 md:w-auto" />
           </div>
           <div className="flex items-center justify-center">
-            <img src={Muzingo} alt="Muzingo" className="h-16" />
+            <img src={Muzingo} alt="Muzingo" className="w-2/3 h-16 md:w-auto" />
           </div>
-          <div className="w-52 h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px]">
-            <img src={Sambe1} alt="Sambe1" />
-            <img src={Sambe2} alt="Sambe2" />
+          <div className="w-[fit-content] h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px]">
+            <img src={Sambe1} alt="Sambe1" className="flex-1" />
+            <img src={Sambe2} alt="Sambe2" className="flex-1"/>
           </div>
           {/* next founder logos */}
           <div className="flex items-center justify-center">
-            <img src={Tubda} alt="Tubda" className="rounded-[17px] h-16" />
+            <img src={Tubda} alt="Tubda" className="rounded-[17px] w-2/3 h-16 md:w-auto" />
           </div>
           <div className="flex items-center justify-center rounded-[20px]">
             <img src={Genie} alt="Genius Club" />
@@ -133,17 +137,28 @@ function App() {
                     Campuses & audience
                   </div>
                   <div className="flex gap-4">
-                    <span className="font-semibold text-black">Campuses</span> <span className="text-cr-gray-600">audience</span>{" "}
-                    <select name="campuses" id="campusAndAudience" className="font-semibold">
+                    <span className="font-semibold text-black">Campuses</span>{" "}
+                    <span className="text-cr-gray-600">audience</span>{" "}
+                    <select
+                      name="campuses"
+                      id="campusAndAudience"
+                      className="font-semibold"
+                    >
                       <option value="7">Last 7 days</option>
                     </select>
                   </div>
                   <div className="flex items-center justify-between md:w-[80%] w-full gap-4">
                     <img src={PieChart} alt="chart" />
                     <ul className="flex flex-col justify-start">
-                      <li className="text-[#FF3A29] list-disc text-xl"><span className="text-black">UNN</span></li>
-                      <li className="text-[#FFB200] list-disc text-xl"><span className="text-black">UNIZIK</span></li>
-                      <li className="text-[#4339F2] list-disc text-xl"><span className="text-black">ESUT</span></li>
+                      <li className="text-[#FF3A29] list-disc text-xl">
+                        <span className="text-black">UNN</span>
+                      </li>
+                      <li className="text-[#FFB200] list-disc text-xl">
+                        <span className="text-black">UNIZIK</span>
+                      </li>
+                      <li className="text-[#4339F2] list-disc text-xl">
+                        <span className="text-black">ESUT</span>
+                      </li>
                     </ul>
                   </div>
                 </div>

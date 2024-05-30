@@ -9,9 +9,9 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className="flex items-center gap-6">
+    <nav className="flex flex-col items-center gap-6 md:flex-row">
       {navbarData.map((nav, index) => (
-        <a href="#" key={index} className={`text-lg font-medium transition-all ${activeNav === nav ? 'text-forest-green-500' : 'text-black hover:text-forest-green-500'}`} onClick={() => handleActiveNav(nav)}>
+        <a href="#" key={index} className={`text-xs md:text-lg font-medium transition-all ${activeNav === nav ? 'text-forest-green-500' : 'text-black hover:text-forest-green-500'}`} onClick={() => handleActiveNav(nav)}>
           {nav}
         </a>
       ))}
