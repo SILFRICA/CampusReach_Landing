@@ -40,12 +40,13 @@ function App() {
               in Campus Communities
             </h1>
             <br />
-            <p className="font-medium text-center">
+            <p className="font-medium text-center xl:w-5/6">
               Leverage student marketers/influencers across 25 campuses to drive
               affordable and time-effective campaigns. We manage your campaign
               from start to finish to achieve your marketing goals in campus
               communities
             </p>
+            <br />
             <br />
             <Button kind="button" title="Get a free proposal" />
           </div>
