@@ -42,7 +42,7 @@ function App() {
               in Campus Communities
             </h1>
             <br />
-            <p className="font-medium text-center text-cr-gray-600 lg:text-2xl xl:max-w-5/6">
+            <p className="w-[95%] font-medium text-center text-cr-gray-600 lg:text-2xl xl:max-w-5/6">
               Leverage student marketers/influencers across 25 campuses to drive
               affordable and time-effective campaigns. We manage your campaign
               from start to finish to achieve your marketing goals in campus
@@ -54,7 +54,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-20 h-80 start-ups">
+      <div className="flex flex-col w-full gap-20 md:h-80 h-fit start-ups">
         <h4 className="text-lg font-bold text-center md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
