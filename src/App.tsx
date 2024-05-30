@@ -19,7 +19,7 @@ import MenuBtn from "./components/MenuBtn";
 function App() {
   return (
     <>
-      <div className="h-screen py-4 mb-8 md:mx-8 top-section">
+      <div className="h-screen py-4 mb-8 md:mx-20 top-section">
         <header className="relative h-[10%] flex items-center justify-between w-full gap-10">
           <div className="flex items-center gap-3">
             <img src={Logo} alt="Logo" />
@@ -34,13 +34,13 @@ function App() {
           <MenuBtn />
         </header>
         <div className="flex h-[90%] flex-col justify-center items-center text-center hero-section">
-          <div className="flex flex-col items-center justify-center w-2/3">
-            <h1 className="text-3xl font-bold lg:text-6xl">
+          <div className="flex flex-col items-center justify-center w-full xl:w-2/3">
+            <h1 className="text-3xl font-bold xl:text-7xl lg:text-6xl">
               Unlock <span className="text-forest-green-500">10x</span> Growth
               in Campus Communities
             </h1>
             <br />
-            <p className="font-medium text-center xl:w-5/6">
+            <p className="font-medium text-center text-cr-gray-600 lg:text-2xl xl:text-3xl xl:w-5/6">
               Leverage student marketers/influencers across 25 campuses to drive
               affordable and time-effective campaigns. We manage your campaign
               from start to finish to achieve your marketing goals in campus
