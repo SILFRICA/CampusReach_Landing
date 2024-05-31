@@ -15,6 +15,13 @@ import GroupImg1 from "./assets/Group 420.png";
 import GroupImg2 from "./assets/Group 421.png";
 import PieChart from "./assets/Group 7.svg";
 import MenuBtn from "./components/MenuBtn";
+import Group1 from "./assets/Group 368.png";
+import Group2 from "./assets/Group 378.png";
+import TestimonyLogo1 from "./assets/30881 1.png";
+import Card from "./components/card/Card";
+import gear from "./assets/gear.svg";
+import handshake from "./assets/handshake.svg";
+import bolt from "./assets/bolt.svg";
 
 function App() {
   return (
@@ -30,7 +37,11 @@ function App() {
             </div>
             <div className="absolute flex-col justify-between hidden gap-8 lg:flex lg:w-2/3 lg:flex-row lg:relative">
               <Navbar />
-              <Button kind="button" title="Get a proposal" />
+              <Button
+                kind="button"
+                title="Get a proposal"
+                cnames="bg-forest-green-500"
+              />
             </div>
             <MenuBtn />
           </header>
@@ -50,7 +61,11 @@ function App() {
             </p>
             <br />
             <br />
-            <Button kind="button" title="Get a free proposal" />
+            <Button
+              kind="button"
+              title="Get a free proposal"
+              cnames="bg-black"
+            />
           </div>
         </div>
       </div>
@@ -67,10 +82,18 @@ function App() {
             />
           </div>
           <div className="flex items-center justify-center rounded-[20px]">
-            <img src={Raize} alt="Raize" className="w-2/3 h-16 md:w-auto rounded-[20px]" />
+            <img
+              src={Raize}
+              alt="Raize"
+              className="w-2/3 h-16 md:w-auto rounded-[20px]"
+            />
           </div>
           <div className="flex items-center justify-center rounded-[20px]">
-            <img src={Muzingo} alt="Muzingo" className="w-2/3 h-16 md:w-auto rounded-[20px]" />
+            <img
+              src={Muzingo}
+              alt="Muzingo"
+              className="w-2/3 h-16 md:w-auto rounded-[20px]"
+            />
           </div>
           <div className="w-[fit-content] h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px]">
             <img src={Sambe1} alt="Sambe1" className="w-1/3" />
@@ -99,7 +122,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full py-4 bg-cr-gray-200 second-section">
+      <div className="flex justify-center w-full pt-4 pb-8 bg-cr-gray-200 second-section">
         <div className="flex flex-col items-center w-5/6 gap-5 mt-10">
           <h3 className="text-3xl font-bold text-center lg:text-5xl">
             Accelerate Your Growth Across Campus Communities
@@ -186,9 +209,121 @@ function App() {
                 </div>
               </div>
             </div>
+            <AccelCard
+              title="Engaging Local Merchants"
+              description="Extend your reach beyond students to local merchants within campus communities. Our campaigns facilitate connections with these merchants through our student reps, expanding your market reach"
+              cnames="lg:h-[250px] bg-cr-yellow-200 px-2"
+              textWidth="text-left grid w-5/6 place-items-start"
+              image=""
+            />
+            <AccelCard
+              title="Campus Representative Management"
+              description="Establish a physical presence in campus communities by leveraging student representatives. You have the flexibility to manage them yourself or allow us to handle them, ensuring your objectives are met."
+              cnames="lg:h-[250px] bg-cr-pink-300 px-2"
+              textWidth="text-left grid w-5/6 place-items-start"
+              image=""
+            />
           </div>
         </div>
       </div>
+      <section className="py-4 campaign">
+        <div className="w-[85%] mx-auto">
+          <h3 className="mb-4 text-2xl font-bold text-center lg:mb-8 lg:text-5xl">
+            Our Campaign Channels
+          </h3>
+          <br />
+          <div className="grid grid-cols-2 place-items-center">
+            <div className="w-full">
+              <img src={Group1} alt="grouped-img" className="w-[20rem]" />
+            </div>
+            <div className="flex flex-col items-start gap-4 lg:w-10/12">
+              <h4 className="text-2xl font-bold lg:text-3xl">
+                Lead Generation Model
+              </h4>
+              <span className="text-cr-gray-600">
+                The lead generation model focuses on personalized engagement
+                with your brand's target audience to drive customer acquisition.
+                The cost varies depending on the customer acquisition cost
+                (CAC), determined by factors such as funnel length, target
+                audience, and the final call-to-action (CTA).
+              </span>
+              <Button kind="button" title="Learn More" cnames="bg-black" />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 place-items-center mb-10 lg:mb-14">
+            <div className="flex flex-col items-start gap-4 lg:w-10/12">
+              <h4 className="text-2xl font-bold lg:text-3xl">
+                Influencer Model
+              </h4>
+              <span className="text-cr-gray-600">
+                Our influencer model empowers student influencers to craft
+                captivating content, leveraging their reach to amplify your
+                brand and drive conversions on campus. With tailored content and
+                incentives, we ensure high engagement and ROI potential,
+                connecting you with the ideal influencers for maximum impact.
+              </span>
+              <Button kind="button" title="Learn More" cnames="bg-black" />
+            </div>
+            <div className="w-full lg:flex lg:justify-end">
+              <img src={Group2} alt="grouped-img" className="w-[20rem]" />
+            </div>
+          </div>
+          <div
+            className="w-full lg:h-[320px] flex flex-col lg:flex-row justify-center items-center bg-cr-gray-250 
+          rounded-xl gap-10 mb-8 lg:mb-10"
+          >
+            <div className="relative w-[300px] h-[250px] bg-contain rounded-lg testimony-img">
+              <img
+                src={TestimonyLogo1}
+                alt="logo"
+                className="absolute bottom-8 left-8"
+              />
+            </div>
+            <div className="lg:w-[65%] font-normal testimony-details">
+              <p className="2xl:text-2xl">
+                We recently collaborated with CampusReach for a campaign
+                promoting our product, Playmuzingo. Their dedication and
+                expertise resulted in an exceptional 9/10 rating for campaign
+                performance. The ROI was remarkable. Highly recommended
+              </p>
+              <br />
+              <h5>Dolapo Olisa</h5>
+              <p>CEO of Charisol</p>
+            </div>
+          </div>
+          <div className="w-full text-2xl lg:text-5xl text-center font-bold my-8 lg:my-10">
+            <span className="w-full">
+              3000+ students and merchants in communities reached for businesses
+            </span>
+          </div>
+          <div className="w-full grid grid-cols-3 gap-8">
+            <Card
+              cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
+              cnames="flex flex-col justify-between items-start mt-4"
+              iconColor="bg-black"
+              img={gear}
+              title="Over #1million"
+              description="In ad spend managed"
+            />
+            <Card
+              cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
+              cnames="flex flex-col justify-between items-start mt-4"
+              iconColor="bg-black"
+              img={handshake}
+              title="Over 20+"
+              description="Startups booked"
+            />
+            <Card
+              cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
+              cnames="flex flex-col justify-between items-start mt-4"
+              iconColor="bg-black"
+              img={bolt}
+              title="2 weeks"
+              description="To launch from strategy to execution"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
