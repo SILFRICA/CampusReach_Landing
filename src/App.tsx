@@ -250,7 +250,7 @@ function App() {
               <Button kind="button" title="Learn More" cnames="bg-black" />
             </div>
           </div>
-          <div className="grid grid-cols-2 place-items-center mb-10 lg:mb-14">
+          <div className="grid grid-cols-2 mb-10 place-items-center lg:mb-14">
             <div className="flex flex-col items-start gap-4 lg:w-10/12">
               <h4 className="text-2xl font-bold lg:text-3xl">
                 Influencer Model
@@ -270,16 +270,16 @@ function App() {
           </div>
           <div
             className="w-full lg:h-[320px] flex flex-col lg:flex-row justify-center items-center bg-cr-gray-250 
-          rounded-xl gap-10 mb-8 lg:mb-10"
+          rounded-xl gap-10 mb-8 lg:mb-10 pt-4 pl-4 lg:pt-0 lg:pl-0"
           >
-            <div className="relative w-[300px] h-[250px] bg-contain rounded-lg testimony-img">
+            <div className="relative w-full lg:w-[300px] h-[250px] bg-contain rounded-lg testimony-img">
               <img
                 src={TestimonyLogo1}
                 alt="logo"
                 className="absolute bottom-8 left-8"
               />
             </div>
-            <div className="lg:w-[65%] font-normal testimony-details">
+            <div className="lg:w-[65%] font-normal testimony-details text-right pr-8 lg:pr-0 lg:text-start text-pretty">
               <p className="2xl:text-2xl">
                 We recently collaborated with CampusReach for a campaign
                 promoting our product, Playmuzingo. Their dedication and
@@ -291,12 +291,12 @@ function App() {
               <p>CEO of Charisol</p>
             </div>
           </div>
-          <div className="w-full text-2xl lg:text-5xl text-center font-bold my-8 lg:my-10">
+          <div className="w-full my-8 text-2xl font-bold text-center lg:text-5xl lg:my-10">
             <span className="w-full">
               3000+ students and merchants in communities reached for businesses
             </span>
           </div>
-          <div className="w-full grid grid-cols-3 gap-8">
+          <div className="grid w-full gap-8 lg:grid-cols-3">
             <Card
               cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
               cnames="flex flex-col justify-between items-start mt-4"
@@ -307,7 +307,7 @@ function App() {
             />
             <Card
               cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
-              cnames="flex flex-col justify-between items-start mt-4"
+              cnames="flex flex-col justify-between items-end lg:items-start mt-4"
               iconColor="bg-black"
               img={handshake}
               title="Over 20+"
@@ -320,6 +320,14 @@ function App() {
               img={bolt}
               title="2 weeks"
               description="To launch from strategy to execution"
+            />
+          </div>
+          <br />
+          <div className="flex justify-center w-full">
+            <Button
+              kind="button"
+              title="Get a free proposal"
+              cnames="bg-forest-green-500"
             />
           </div>
         </div>
