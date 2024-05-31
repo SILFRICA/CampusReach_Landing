@@ -22,6 +22,8 @@ import Card from "./components/card/Card";
 import gear from "./assets/gear.svg";
 import handshake from "./assets/handshake.svg";
 import bolt from "./assets/bolt.svg";
+import WhyStartups from "./components/sections/WhyStartups";
+import CampusReachVs from "./components/card/CampusReachVs";
 
 function App() {
   return (
@@ -73,7 +75,7 @@ function App() {
         <h4 className="text-lg font-bold text-center md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-content-center place-items-center md:max-w-[75%] mx-auto founders-box">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-content-center place-items-center md:max-w-[75%] mx-auto founders-box1">
           <div className="md:w-52 w-28 h-16 bg-[#0B55B4] flex items-center justify-center rounded-[20px]">
             <img
               src={JayHC}
@@ -99,7 +101,7 @@ function App() {
             <img src={Sambe1} alt="Sambe1" className="w-1/3" />
             <img src={Sambe2} alt="Sambe2" className="w-1/2" />
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center rounded-[20px]">
             <img
               src={Tubda}
               alt="Tubda"
@@ -226,7 +228,7 @@ function App() {
           </div>
         </div>
       </div>
-      <section className="py-4 campaign">
+      <section className="py-4 mb-8 campaign">
         <div className="w-[85%] mx-auto">
           <h3 className="mb-4 text-2xl font-bold text-center lg:mb-8 lg:text-5xl">
             Our Campaign Channels
@@ -279,16 +281,17 @@ function App() {
                 className="absolute bottom-8 left-8"
               />
             </div>
-            <div className="lg:w-[65%] font-normal testimony-details text-right pr-8 lg:pr-0 lg:text-start text-pretty">
-              <p className="2xl:text-2xl">
-                We recently collaborated with CampusReach for a campaign
-                promoting our product, Playmuzingo. Their dedication and
-                expertise resulted in an exceptional 9/10 rating for campaign
-                performance. The ROI was remarkable. Highly recommended
+            <div className="lg:w-[65%] font-normal testimony-details text-right pr-8 pb-8 lg:pb-0 lg:pr-0 lg:text-start text-pretty">
+              <p className="2xl:text-2xl text-balance">
+                <b>&ldquo;</b> We recently collaborated with CampusReach for a
+                campaign promoting our product, Playmuzingo. Their dedication
+                and expertise resulted in an exceptional 9/10 rating for
+                campaign performance. The ROI was remarkable. Highly recommended{" "}
+                <b>&rdquo;</b>
               </p>
               <br />
-              <h5>Dolapo Olisa</h5>
-              <p>CEO of Charisol</p>
+              <h5 className="font-semibold">Dolapo Olisa</h5>
+              <p className="font-lightbold">CEO of Charisol</p>
             </div>
           </div>
           <div className="w-full my-8 text-2xl font-bold text-center lg:text-5xl lg:my-10">
@@ -300,7 +303,7 @@ function App() {
             <Card
               cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
               cnames="flex flex-col justify-between items-start mt-4"
-              iconColor="bg-black"
+              iconColor="bg-black h-10 w-10"
               img={gear}
               title="Over #1million"
               description="In ad spend managed"
@@ -308,7 +311,7 @@ function App() {
             <Card
               cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
               cnames="flex flex-col justify-between items-end lg:items-start mt-4"
-              iconColor="bg-black"
+              iconColor="bg-black h-10 w-10"
               img={handshake}
               title="Over 20+"
               description="Startups booked"
@@ -316,7 +319,7 @@ function App() {
             <Card
               cardColor="bg-cr-gray-250 text-black h-[250px] lg:h-[400px]"
               cnames="flex flex-col justify-between items-start mt-4"
-              iconColor="bg-black"
+              iconColor="bg-black h-10 w-10"
               img={bolt}
               title="2 weeks"
               description="To launch from strategy to execution"
@@ -330,7 +333,31 @@ function App() {
               cnames="bg-forest-green-500"
             />
           </div>
+          <br />
+          <div className="w-full my-8 text-2xl font-bold text-center lg:text-5xl lg:my-10">
+            <span className="w-full">Why Startups love us</span>
+          </div>
+          <WhyStartups />
         </div>
+      </section>
+      <br />
+      <section className="h-[450px] bg-cr-teal-100 justify-center items-center gap-4 lg:gap-8 flex flex-col">
+        <h3 className="text-4xl font-semibold lg:text-7xl lg:font-bold">
+          Sound too good to be true?
+        </h3>
+        <span className="text-sm font-normal text-center lg:text-lg lg:w-1/2 text-cr-gray-600">
+          We get that a lot. See it firsthand: Fill out a simple form for a
+          detailed proposal in just 5 days, while others take weeks.
+        </span>
+        <Button
+          kind="button"
+          title="Get a free proposal"
+          cnames="bg-forest-green-500"
+        />
+      </section>
+      <br />
+      <section className="py-4 versus">
+        <CampusReachVs />
       </section>
     </>
   );
