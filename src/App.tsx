@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <div className="h-screen py-4 mb-8 top-section">
-        <div className="relative h-[10%] flex justify-center items-center w-full">
+        <div className="relative h-[10vh] flex justify-center items-center w-full">
           <header className="flex lg:w-[80%] w-full justify-between max-md:mx-4">
             <div className="flex items-center gap-3">
               <img src={Logo} alt="Logo" />
@@ -52,14 +52,14 @@ function App() {
             <MenuBtn />
           </header>
         </div>
-        <div className="flex h-[90%] flex-col justify-center items-center text-center hero-section">
+        <div className="flex flex-col items-center justify-center h-[90dvh] text-center hero-section">
           <div className="flex flex-col items-center justify-center w-full xl:w-2/3">
             <h1 className="text-3xl font-bold lg:text-6xl">
               Unlock <span className="text-forest-green-500">10x</span> Growth
               in Campus Communities
             </h1>
             <br />
-            <p className="w-[95%] font-medium text-center text-cr-gray-600 lg:text-2xl xl:max-w-5/6">
+            <p className="w-full px-4 font-medium text-center text-cr-gray-600 lg:text-2xl xl:w-5/6">
               Leverage student marketers/influencers across 25 campuses to drive
               affordable and time-effective campaigns. We manage your campaign
               from start to finish to achieve your marketing goals in campus
@@ -75,7 +75,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-20 mb-8 h-fit start-ups">
+      <div className="flex flex-col w-full gap-20 my-8 h-fit start-ups">
         <h4 className="text-lg font-bold text-center md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
@@ -87,14 +87,14 @@ function App() {
               className="object-contain w-[90%] md:w-[fit-content]"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Raize}
               alt="Raize"
               className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Muzingo}
               alt="Muzingo"
@@ -105,21 +105,21 @@ function App() {
             <img src={Sambe1} alt="Sambe1" className="w-1/3" />
             <img src={Sambe2} alt="Sambe2" className="w-1/2" />
           </div>
-          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Tubda}
               alt="Tubda"
               className="rounded-[17px] w-2/3 h-16 md:w-auto"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Genie}
               alt="Genius Club"
               className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Charisol}
               alt="Charisol"
@@ -128,6 +128,7 @@ function App() {
           </div>
         </div>
       </div>
+      <br />
       <div className="flex justify-center w-full pt-4 pb-8 bg-cr-gray-200 second-section">
         <div className="flex flex-col items-center w-5/6 gap-5 mt-10">
           <h3 className="text-3xl font-bold text-center lg:text-5xl">
@@ -140,32 +141,32 @@ function App() {
             through our network of student marketers. Whether virtual or
             physical, we ensure your campaign's success on any campus, anywhere
           </p>
-          <div className="grid w-full grid-rows-1 gap-10 lg:grid-cols-2">
+          <div className="grid w-full grid-cols-1 gap-4 lg:gap-10 lg:grid-cols-2">
             <AccelCard
               title="End-to-End Campaign Management"
               description="We handle every aspect of your campaign, from strategy to student-creator management, allowing you to focus on your business while we accelerate your growth efficiently"
-              cnames="lg:h-[400px] bg-cr-pink-300"
+              cnames="lg:h-[400px] lg:col-span-1 col-span-2 bg-cr-pink-300"
               textWidth="lg:w-[70%]"
               image={GroupImg1}
             />
             <AccelCard
               title="First-Class Customer Support"
               description="Our marketers double as your first line of customer support, aiding new users in onboarding onto your platform or accessing your services. This ensures a seamless first-user experience, enhancing user satisfaction."
-              cnames="lg:h-[400px] bg-cr-light-green"
+              cnames="lg:h-[400px] bg-cr-light-green col-span-2 lg:col-span-1"
               textWidth="lg:w-[70%]"
               image={GroupImg2}
             />
             <AccelCard
               title="Insightful User Feedback"
               description="Our campaigns gather invaluable product, and market insights from your target customers through our experienced student marketers. These insights are compiled into a comprehensive document, empowering you to enhance your product value."
-              cnames="lg:h-[250px] bg-cr-gray-300 px-2"
+              cnames="lg:h-[250px] bg-cr-gray-300 px-2 col-span-2 lg:col-span-1"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
             <AccelCard
               title="Access to Underserved Markets"
               description="Utilizing our network of student marketers, we can penetrate under-served markets with campaigns that are not only 10x more affordable but also highly effective, providing you with access to untapped opportunities."
-              cnames="lg:h-[250px] bg-cr-yellow-200 px-2"
+              cnames="lg:h-[250px] bg-cr-yellow-200 px-2 col-span-2 lg:col-span-1"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
@@ -218,14 +219,14 @@ function App() {
             <AccelCard
               title="Engaging Local Merchants"
               description="Extend your reach beyond students to local merchants within campus communities. Our campaigns facilitate connections with these merchants through our student reps, expanding your market reach"
-              cnames="lg:h-[250px] bg-cr-yellow-200 px-2"
+              cnames="lg:h-[250px] bg-cr-yellow-200 px-2 col-span-2 lg:col-span-1"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
             <AccelCard
               title="Campus Representative Management"
               description="Establish a physical presence in campus communities by leveraging student representatives. You have the flexibility to manage them yourself or allow us to handle them, ensuring your objectives are met."
-              cnames="lg:h-[250px] bg-cr-pink-300 px-2"
+              cnames="lg:h-[250px] bg-cr-pink-300 px-2 col-span-2 lg:col-span-1"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />

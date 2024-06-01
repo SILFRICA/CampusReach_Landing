@@ -8,10 +8,10 @@ const FooterWithHero: React.FC = () => {
     <footer className="flex flex-col items-center justify-center w-full gap-4 py-20 mt-8 text-white bg-emerald-950 lg:gap-8">
       <div className="w-[85%] mx-auto">
         <div className="flex flex-col items-center w-full text-center">
-          <h3 className="w-2/3 text-2xl font-bold lg:text-5xl">
+          <h3 className="text-2xl font-bold lg:w-2/3 lg:text-5xl">
             Leave Traditional Marketing Agencies & Freelancers Behind
           </h3>
-          <p className="w-[60%] my-6">
+          <p className="lg:w-[60%] my-6">
             Tired of the hassle and limitations of traditional agencies? Bid
             slow processes farewell and hello to{" "}
             <span className="text-forest-green-500">CampusReach</span>! Our
@@ -33,11 +33,11 @@ const FooterWithHero: React.FC = () => {
         <div className="w-full h-px border border-neutral-600"></div>
         <br />
         <div className="w-full mt-6 footlinks">
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mb-8 lg:mb-0">
             <img src={Logo} alt="Logo" />
             <h1 className="text-sm font-bold md:text-2xl">CampusReach</h1>
           </div>
-          <div className="flex flex-col justify-center w-full gap-8 lg:flex-row lg:justify-end lg:gap-10 links">
+          <div className="flex flex-row flex-wrap justify-start w-full gap-8 lg:justify-end lg:gap-10 links">
             {footLinks.map((item) => (
               <div
                 className="flex flex-col text-sm"
