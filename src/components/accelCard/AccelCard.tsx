@@ -17,10 +17,10 @@ const AccelCard: React.FC<AccelCardProps> = ({
 }) => {
   return (
     <div
-      className={`h-52 rounded-xl ${cnames} flex flex-col justify-around items-center card`}
+      className={`h-fit rounded-xl ${cnames} flex flex-col justify-around items-center card`}
     >
       <div className={`${textWidth} card-details`}>
-        <h6 className="mb-4 text-2xl font-bold">{title}</h6>
+        <h6 className="mb-4 text-base font-bold lg:text-2xl">{title}</h6>
         <p className="text-sm font-normal text-cr-gray-600">{description}</p>
       </div>
       {image && (

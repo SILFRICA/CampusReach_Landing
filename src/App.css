@@ -28,3 +28,7 @@
   background-image: url(assets/ceo.png);
   background-repeat: no-repeat;
 }
+
+.card {
+  padding: 1rem;
+}
