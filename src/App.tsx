@@ -26,6 +26,8 @@ import WhyStartups from "./components/sections/WhyStartups";
 import CampusReachVs from "./components/card/CampusReachVs";
 import LogoWithText from "./assets/logo_with_text.png";
 import HowItWorks from "./components/sections/how-it-works/HowItWorks";
+import FAQs from "./components/sections/faqs/FAQs";
+import FooterWithHero from "./components/sections/footer/FooterWithHero";
 
 function App() {
   return (
@@ -391,6 +393,10 @@ function App() {
       </section>
       
       <HowItWorks />
+      <br />
+      <FAQs />
+      <br />
+      <FooterWithHero />
     </>
   );
 }
