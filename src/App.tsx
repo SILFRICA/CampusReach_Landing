@@ -75,11 +75,11 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-20 md:h-80 h-fit start-ups">
+      <div className="flex flex-col w-full gap-20 mb-8 h-fit start-ups">
         <h4 className="text-lg font-bold text-center md:text-2xl">
           Join the founders from fast-growing startups
         </h4>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 place-content-center place-items-center md:max-w-[75%] mx-auto founders-box1">
+        <div className="flex flex-wrap justify-center gap-4 md:max-w-[75%] mx-auto founders-box">
           <div className="md:w-52 w-28 h-16 bg-[#0B55B4] flex items-center justify-center rounded-[20px]">
             <img
               src={JayHC}
@@ -87,39 +87,39 @@ function App() {
               className="object-contain w-[90%] md:w-[fit-content]"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px]">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
             <img
               src={Raize}
               alt="Raize"
               className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px]">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
             <img
               src={Muzingo}
               alt="Muzingo"
               className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
-          <div className="w-[fit-content] h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px]">
+          <div className="w-fit h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px] md:w-auto">
             <img src={Sambe1} alt="Sambe1" className="w-1/3" />
             <img src={Sambe2} alt="Sambe2" className="w-1/2" />
           </div>
-          <div className="flex items-center justify-center rounded-[20px]">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
             <img
               src={Tubda}
               alt="Tubda"
               className="rounded-[17px] w-2/3 h-16 md:w-auto"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px]">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
             <img
               src={Genie}
               alt="Genius Club"
               className="w-2/3 h-16 md:w-auto rounded-[20px]"
             />
           </div>
-          <div className="flex items-center justify-center rounded-[20px]">
+          <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16 bg-gray-200">
             <img
               src={Charisol}
               alt="Charisol"
@@ -391,7 +391,7 @@ function App() {
           </div>
         </div>
       </section>
-      
+
       <HowItWorks />
       <br />
       <FAQs />
