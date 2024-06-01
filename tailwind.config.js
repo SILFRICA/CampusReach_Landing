@@ -19,6 +19,9 @@ export default {
         "cr-yellow-200": "#FDFFE3",
         "cr-pink-300": "#FFE3E3",
       },
+      backgroundImage: {
+        'cr-gray-to-white': 'linear-gradient(90deg, #D9D9D9 0%, #FFF 100%)',
+      },
     },
   },
   plugins: [],

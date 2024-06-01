@@ -1,5 +1,7 @@
 import React from "react";
 import FormField from "./inputs/FormField";
+import CampaignBox from "./proposalbox/CampaignBox";
+import { ProposalList } from "./proposalbox/ProposalData";
 
 const HowItWorks: React.FC = () => {
   return (
@@ -72,8 +74,15 @@ const HowItWorks: React.FC = () => {
                   Get a tailored proposal
                 </h4>
               </header>
-              <div className="flex flex-col justify-start w-full h-full gap-4 bg-white card-body">
-                
+              <div className="flex flex-col items-center justify-around w-full h-full gap-4 py-4 mx-auto bg-white card-body">
+                {ProposalList.map((item) => (
+                  <CampaignBox
+                    key={item.items}
+                    title={item.title}
+                    icon={item.icon}
+                    items={item.items}
+                  />
+                ))}
               </div>
             </div>
           </div>
