@@ -1,7 +1,7 @@
 import React from "react";
 import FormField from "./inputs/FormField";
 import CampaignBox from "./proposalbox/CampaignBox";
-import { ProposalList } from "./proposalbox/ProposalData";
+import { ProposalList, icons } from "./proposalbox/ProposalData";
 
 const HowItWorks: React.FC = () => {
   return (
@@ -75,11 +75,11 @@ const HowItWorks: React.FC = () => {
                 </h4>
               </header>
               <div className="flex flex-col items-center justify-around w-full h-full gap-4 py-4 mx-auto bg-white card-body">
-                {ProposalList.map((item) => (
+                {ProposalList.map((item, index) => (
                   <CampaignBox
-                    key={item.items}
+                    key={index}
                     title={item.title}
-                    icon={item.icon}
+                    icon={icons[index]}
                     items={item.items}
                   />
                 ))}
