@@ -169,7 +169,7 @@ function App() {
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
-            <div className="col-span-2 lg:h-[350px] bg-white h-fit py-8 lg:py-3 rounded-xl flex justify-center items-center md:-mt-40">
+            <div className="col-span-2 lg:h-[350px] bg-white h-fit py-8 lg:py-3 rounded-xl flex justify-center items-center">
               <div className="grid grid-rows-1 gap-4 lg:grid-cols-2 place-items-center h-fit lg:h-2/3">
                 <div className="w-[85%] h-full justify-center flex flex-col">
                   <h6 className="mb-4 text-2xl font-bold">
