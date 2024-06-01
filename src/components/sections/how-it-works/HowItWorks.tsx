@@ -100,7 +100,7 @@ const HowItWorks: React.FC = () => {
               </header>
               <div className="grid w-full h-full grid-cols-1 gap-4 card-body place-items-center place-content-center">
                 <ItemBox title={boxTitles[0]} />
-                <div className="flex w-full justify-evenly">
+                <div className="flex w-full gap-4 justify-evenly">
                   <ItemBox title={boxTitles[1]} />
                   <ItemBox title={boxTitles[2]} />
                 </div>
