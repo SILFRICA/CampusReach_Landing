@@ -1,7 +1,9 @@
 import React from "react";
 import FormField from "./inputs/FormField";
 import CampaignBox from "./proposalbox/CampaignBox";
-import { ProposalList, icons } from "./proposalbox/ProposalData";
+import { ProposalList, icons, boxTitles } from "./proposalbox/ProposalData";
+import ItemBox from "./proposalbox/ItemBox";
+import Button from "../../Button";
 
 const HowItWorks: React.FC = () => {
   return (
@@ -96,61 +98,26 @@ const HowItWorks: React.FC = () => {
                   We take care of the rest
                 </h4>
               </header>
-              <div className="flex flex-col h-full card-body justify-start gap-4 lg:w-[90%]">
-                <div className="flex flex-col w-full gap-1">
-                  <label htmlFor="campus" className="text-xs font-medium">
-                    What campus do you want to launch your campaign on?
-                  </label>
-                  <select
-                    name="campus"
-                    id="campus"
-                    className="w-1/2 h-6 px-4 text-xs font-normal bg-white rounded-md text-cr-gray-600"
-                    disabled
-                  >
-                    <option selected>Select Campus</option>
-                  </select>
+              <div className="grid w-full h-full grid-cols-1 gap-4 card-body place-items-center place-content-center">
+                <ItemBox title={boxTitles[0]} />
+                <div className="flex w-full justify-evenly">
+                  <ItemBox title={boxTitles[1]} />
+                  <ItemBox title={boxTitles[2]} />
                 </div>
-                <div className="flex flex-col w-full gap-1">
-                  <label htmlFor="goal" className="text-xs font-medium">
-                    Your campaign goal?
-                  </label>
-                  <input
-                    type="text"
-                    name="goal"
-                    id="goal"
-                    className="w-1/2 h-6 px-4 text-xs font-normal bg-white rounded-md text-cr-gray-600"
-                    placeholder="2000 sales"
-                    disabled
-                  />
-                </div>
-                <div className="flex flex-col w-full gap-1">
-                  <label htmlFor="campus" className="text-xs font-medium">
-                    Your budget?
-                  </label>
-                  <select
-                    name="campus"
-                    id="campus"
-                    className="w-1/2 h-6 px-4 text-xs font-normal bg-white rounded-md text-cr-gray-600"
-                    disabled
-                  >
-                    <option selected>#100,000</option>
-                  </select>
-                </div>
-                <div className="flex flex-col w-full gap-1">
-                  <label htmlFor="launchDate" className="text-xs font-medium">
-                    Date for launch?
-                  </label>
-                  <input
-                    type="date"
-                    name="date"
-                    id="launchDate"
-                    className="w-1/2 h-6 px-4 text-xs font-normal bg-white rounded-md text-cr-gray-600"
-                    disabled
-                  />
-                </div>
+                <ItemBox title={boxTitles[3]} />
+                <ItemBox title={boxTitles[4]} />
+                <ItemBox title={boxTitles[5]} />
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-center w-full mt-6 lg:mt-8">
+          <Button
+            kind="button"
+            title="Get a free proposal"
+            cnames="bg-forest-green-500"
+          />
         </div>
       </div>
     </section>
