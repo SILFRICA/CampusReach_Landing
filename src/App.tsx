@@ -24,6 +24,8 @@ import handshake from "./assets/handshake.svg";
 import bolt from "./assets/bolt.svg";
 import WhyStartups from "./components/sections/WhyStartups";
 import CampusReachVs from "./components/card/CampusReachVs";
+import LogoWithText from "./assets/logo_with_text.png";
+import HowItWorks from "./components/sections/how-it-works/HowItWorks";
 
 function App() {
   return (
@@ -356,9 +358,39 @@ function App() {
         />
       </section>
       <br />
-      <section className="py-4 versus">
+      <section className="py-4 mb-8 versus">
         <CampusReachVs />
       </section>
+
+      <section className="">
+        <div className="w-[85%] mx-auto">
+          <div
+            className="w-full lg:h-[320px] flex flex-col lg:flex-row justify-center items-center bg-[#0000001C] 
+          rounded-xl gap-10 mb-8 lg:mb-10 pt-4 pl-4 lg:pt-0 lg:pl-0"
+          >
+            <div className="relative w-full lg:w-[300px] h-[250px] bg-contain rounded-lg ceo-img">
+              <img
+                src={LogoWithText}
+                alt="logo"
+                className="absolute px-1 bg-white rounded-lg bottom-8 left-8"
+              />
+            </div>
+            <div className="lg:w-[65%] font-normal testimony-details text-right pr-8 pb-8 lg:pb-0 lg:pr-0 lg:text-start text-pretty">
+              <p className="2xl:text-2xl text-balance">
+                <b>&ldquo;</b> We built CampusReach to bridge the gap between
+                businesses and campus communities and we are proud that the
+                businesses we have facilitated this access for, have brought a
+                lot more impact into these communities. <b>&rdquo;</b>
+              </p>
+              <br />
+              <h5 className="font-semibold">Ian Reward</h5>
+              <p className="font-lightbold">CEO Silfrica</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <HowItWorks />
     </>
   );
 }

@@ -23,3 +23,8 @@
   background-image: url(assets/testimony1.png);
   background-repeat: no-repeat;
 }
+
+.ceo-img {
+  background-image: url(assets/ceo.png);
+  background-repeat: no-repeat;
+}
