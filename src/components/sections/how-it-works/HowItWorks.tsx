@@ -14,8 +14,8 @@ const HowItWorks: React.FC = () => {
           </h3>
         </div>
         <br />
-        <div className="grid grid-cols-3 gap-8 mt-6 lg:mt-8">
-          <div className="bg-cr-gray-150 h-[250px] lg:h-[400px] w-full p-4 rounded-xl">
+        <div className="grid grid-rows-1 gap-8 mt-6 lg:grid-cols-3 lg:mt-8">
+          <div className="bg-cr-gray-150 h-fit lg:h-[420px] w-full p-4 rounded-xl">
             <div className="flex flex-col items-start justify-between mt-4 lg:w-[95%] h-full gap-8 pl-4">
               <header>
                 <span className="text-base font-semibold lg:text-xl text-cr-gray-400">
@@ -64,7 +64,7 @@ const HowItWorks: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="bg-cr-gray-150 h-[250px] lg:h-[400px] w-full p-4 rounded-xl">
+          <div className="bg-cr-gray-150 h-fit lg:h-[420px] w-full p-4 rounded-xl">
             <div className="flex flex-col items-start justify-between mt-4 lg:w-[95%] h-full gap-8 pl-4">
               <header>
                 <span className="text-base font-semibold lg:text-xl text-cr-gray-400">
@@ -86,7 +86,7 @@ const HowItWorks: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="bg-cr-gray-150 h-[250px] lg:h-[400px] w-full p-4 rounded-xl">
+          <div className="bg-cr-gray-150 h-fit lg:h-[420px] w-full p-4 rounded-xl">
             <div className="flex flex-col items-start justify-between mt-4 lg:w-[95%] h-full gap-8 pl-4">
               <header>
                 <span className="text-base font-semibold lg:text-xl text-cr-gray-400">
