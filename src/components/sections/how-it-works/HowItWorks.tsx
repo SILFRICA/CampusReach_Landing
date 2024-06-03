@@ -7,7 +7,7 @@ import Button from "../../Button";
 
 const HowItWorks: React.FC = () => {
   return (
-    <section className="my-8 how-it-works">
+    <section className="my-10 how-it-works">
       <div className="w-[85%] mx-auto">
         <div className="w-full text-center">
           <small className="text-gray-300">How it works</small>
