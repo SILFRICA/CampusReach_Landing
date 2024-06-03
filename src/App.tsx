@@ -21,7 +21,7 @@ import QuoteCard from "./components/card/QuoteCard";
 function App() {
   return (
     <>
-      <div className="h-screen py-4 mb-8 top-section">
+      <div className="h-screen py-4 lg:mb-8 top-section">
         <HeaderLayout />
         <div className="flex flex-col items-center justify-center h-[90dvh] text-center hero-section">
           <div className="flex flex-col items-center justify-center w-full xl:w-2/3">
@@ -49,22 +49,22 @@ function App() {
       <br />
       <FounderStartups />
       <br />
-      <div className="flex justify-center w-full pt-4 pb-10 bg-cr-gray-200 second-section my-10">
+      <div className="flex justify-center w-full pt-4 pb-10 my-6 bg-cr-gray-200 second-section lg:my-10">
         <GrowthXlr8 />
       </div>
       <br />
-      <section className="py-4 my-8 campaign">
+      <section className="py-4 my-3 lg:my-8 campaign">
         <div className="w-[85%] mx-auto">
           <h3 className="mb-4 text-2xl font-bold text-center lg:mb-8 lg:text-5xl">
             Our Campaign Channels
           </h3>
           <br />
-          <div className="grid grid-cols-2 place-items-center">
-            <div className="w-full">
+          <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-1">
+            <div className="order-2 w-full lg:order-1">
               <img src={Group1} alt="grouped-img" className="w-[20rem]" />
             </div>
-            <div className="flex flex-col items-start gap-4 lg:w-10/12">
-              <h4 className="text-2xl font-bold lg:text-3xl">
+            <div className="flex flex-col items-start order-1 gap-4 lg:w-10/12 lg:order-2">
+              <h4 className="text-lg font-bold lg:text-3xl">
                 Lead Generation Model
               </h4>
               <span className="text-cr-gray-600">
@@ -77,9 +77,10 @@ function App() {
               <Button kind="button" title="Learn More" cnames="bg-black" />
             </div>
           </div>
-          <div className="grid grid-cols-2 mb-10 place-items-center lg:mb-14">
+          <br />
+          <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-14">
             <div className="flex flex-col items-start gap-4 lg:w-10/12">
-              <h4 className="text-2xl font-bold lg:text-3xl">
+              <h4 className="text-lg font-bold lg:text-3xl">
                 Influencer Model
               </h4>
               <span className="text-cr-gray-600">
@@ -98,7 +99,7 @@ function App() {
           <br />
           <QuoteCard
             bgColor="bg-cr-gray-250"
-            imgBgClass="testimony-img"
+            imgBgClass="bg-cover testimony-img"
             img={TestimonyLogo1}
             imgClass=""
             quote="We recently collaborated with CampusReach for a
@@ -180,7 +181,7 @@ function App() {
         <div className="w-[85%] mx-auto">
           <QuoteCard
             bgColor="bg-[#0000001C]"
-            imgBgClass="ceo-img"
+            imgBgClass="bg-cover ceo-img"
             img={LogoWithText}
             imgClass="px-1 bg-white rounded-lg"
             quote="We built CampusReach to bridge the gap between

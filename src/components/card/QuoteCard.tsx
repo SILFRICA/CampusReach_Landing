@@ -14,16 +14,16 @@ const QuoteCard: React.FC<QuoteCardProps> = ({bgColor, imgBgClass, imgClass, img
   return (
     <div
       className={`w-full lg:h-[320px] flex flex-col lg:flex-row justify-center items-center ${bgColor} 
-          rounded-xl gap-10 my-8 lg:my-10 pt-4 pl-4 lg:pt-0 lg:pl-0`}
+          rounded-xl gap-10 my-8 lg:my-10 lg:pt-0 lg:pl-0`}
     >
-      <div className={`relative w-full lg:w-[300px] h-[250px] bg-contain rounded-lg ${imgBgClass}`}>
+      <div className={`relative w-full lg:w-[300px] h-[250px] lg:bg-contain rounded-lg ${imgBgClass}`}>
         <img
           src={img}
           alt="logo"
           className={`absolute bottom-8 left-8 ${imgClass}`}
         />
       </div>
-      <div className="lg:w-[65%] font-normal testimony-details text-right pr-8 pb-8 lg:pb-0 lg:pr-0 lg:text-start text-pretty">
+      <div className="lg:w-[65%] font-normal testimony-details text-left pr-8 pl-4 pb-8 lg:pb-0 lg:pr-0 lg:text-start text-pretty">
         <p className="2xl:text-2xl text-balance">
           <b>&ldquo;</b> {quote} {" "}<b>&rdquo;</b>
         </p>

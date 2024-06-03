@@ -10,7 +10,7 @@ const GrowthXlr8: React.FC = () => {
           <h3 className="text-3xl font-bold text-center lg:text-5xl">
             Accelerate Your Growth Across Campus Communities
           </h3>
-          <p className="mb-3 text-center text-cr-gray-600">
+          <p className="mb-3 lg:text-center text-justify text-cr-gray-600">
             Launching impactful marketing campaigns in campus communities
             demands significant time and resources. Let CampusReach handle the
             heavy lifting for you, providing invaluable insights and data

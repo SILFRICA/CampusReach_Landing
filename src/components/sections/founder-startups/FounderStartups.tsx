@@ -33,7 +33,7 @@ const FounderStartups: React.FC = () => {
             <img
               src={Muzingo}
               alt="Muzingo"
-              className="w-2/3 h-16 md:w-auto rounded-[20px]"
+              className="w-full h-16 rounded-[20px]"
             />
           </div>
           <div className="w-fit h-16 bg-[#0D0F36] flex items-center justify-center rounded-[20px] md:w-auto">
@@ -44,21 +44,21 @@ const FounderStartups: React.FC = () => {
             <img
               src={Tubda}
               alt="Tubda"
-              className="rounded-[17px] w-2/3 h-16 md:w-auto"
+              className="rounded-[17px] h-16 w-full"
             />
           </div>
           <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Genie}
               alt="Genius Club"
-              className="w-2/3 h-16 md:w-auto rounded-[20px]"
+              className="w-full h-16 rounded-[20px]"
             />
           </div>
           <div className="flex items-center justify-center rounded-[20px] w-28 md:w-auto h-16">
             <img
               src={Charisol}
               alt="Charisol"
-              className="w-2/3 h-16 md:w-auto rounded-[20px]"
+              className="w-full h-16 rounded-[20px]"
             />
           </div>
         </div>

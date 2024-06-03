@@ -9,9 +9,9 @@ import Customerio from "../../assets/logos_customerio-icon.svg";
 
 const WhyStartups: React.FC = () => {
   return (
-    <div className="grid w-full gap-8 lg:grid-cols-4">
+    <div className="grid w-full gap-2 lg:gap-8 lg:grid-cols-4">
       <Card
-        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px]"
+        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
         cnames="flex flex-col justify-between items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={FlashOn}
@@ -19,7 +19,7 @@ const WhyStartups: React.FC = () => {
         description="See your campaigns launched in 2 weeks or less."
       />
       <Card
-        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px]"
+        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
         cnames="flex flex-col justify-between items-end lg:items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={MoneyBag}
@@ -43,7 +43,7 @@ const WhyStartups: React.FC = () => {
         description="Chat directly with us via Whatsapp or email."
       />
       <Card
-        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px]"
+        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
         cnames="flex flex-col justify-between items-end lg:items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={GrowthBook}
@@ -51,7 +51,7 @@ const WhyStartups: React.FC = () => {
         description="Our expertise and technology maximize results and ROI."
       />
       <Card
-        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px]"
+        cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
         cnames="flex flex-col justify-between items-end lg:items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={PersonIdea}

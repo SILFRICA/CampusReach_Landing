@@ -9,7 +9,7 @@ const FaqCard: React.FC<FAQCardProps> = ({question, answer}) => {
   return (
     <details className="group [&_summary::-webkit-details-marker]:hidden" >
       <summary className="flex cursor-pointer items-center justify-between gap-1.5 rounded-lg bg-gray-50 p-4 text-gray-900">
-        <h2 className="font-medium">
+        <h2 className="font-medium text-sm lg:text-lg">
           {question}
         </h2>
 

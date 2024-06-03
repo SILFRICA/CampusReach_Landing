@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({kind, title, cnames}) => {
   return (
     <button 
         type={kind || "submit"} 
-        className={`px-4 py-3 font-bold text-center text-white transition-all border-none w-fit ${cnames} rounded-xl hover:-translate-y-1`}
+        className={`px-4 py-3 font-bold text-center text-white transition-all border-none w-fit ${cnames} rounded-xl hover:-translate-y-1 hover:shadow-lg`}
     >
     {title}
     </button>
