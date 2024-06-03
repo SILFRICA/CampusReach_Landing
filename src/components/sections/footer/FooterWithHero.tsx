@@ -7,7 +7,7 @@ const FooterWithHero: React.FC = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full gap-4 py-20 mt-8 text-white bg-emerald-950 lg:gap-8">
       <div className="w-[85%] mx-auto">
-        <div className="flex flex-col items-center w-full text-center">
+        <div className="flex flex-col items-center w-full text-center animate-appear">
           <h3 className="text-2xl font-bold lg:w-2/3 lg:text-5xl">
             Leave Traditional Marketing Agencies & Freelancers Behind
           </h3>

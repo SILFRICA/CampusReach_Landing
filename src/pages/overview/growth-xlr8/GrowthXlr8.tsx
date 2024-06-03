@@ -7,10 +7,10 @@ import PieChart from "../../../assets/Group 7.svg";
 const GrowthXlr8: React.FC = () => {
   return (
     <div className="flex flex-col items-center w-5/6 gap-5 mt-10">
-          <h3 className="text-3xl font-bold text-center lg:text-5xl">
+          <h3 className="text-3xl font-bold text-center lg:text-5xl animate-appear">
             Accelerate Your Growth Across Campus Communities
           </h3>
-          <p className="mb-3 lg:text-center text-justify text-cr-gray-600">
+          <p className="mb-3 text-justify lg:text-center text-cr-gray-600 animate-appear">
             Launching impactful marketing campaigns in campus communities
             demands significant time and resources. Let CampusReach handle the
             heavy lifting for you, providing invaluable insights and data
@@ -21,32 +21,32 @@ const GrowthXlr8: React.FC = () => {
             <AccelCard
               title="End-to-End Campaign Management"
               description="We handle every aspect of your campaign, from strategy to student-creator management, allowing you to focus on your business while we accelerate your growth efficiently"
-              cnames="lg:h-[400px] lg:col-span-1 col-span-2 bg-cr-pink-300"
+              cnames="lg:h-[400px] lg:col-span-1 col-span-2 bg-cr-pink-300 animate-appear"
               textWidth="lg:w-[70%]"
               image={GroupImg1}
             />
             <AccelCard
               title="First-Class Customer Support"
               description="Our marketers double as your first line of customer support, aiding new users in onboarding onto your platform or accessing your services. This ensures a seamless first-user experience, enhancing user satisfaction."
-              cnames="lg:h-[400px] bg-cr-light-green col-span-2 lg:col-span-1"
+              cnames="lg:h-[400px] bg-cr-light-green col-span-2 lg:col-span-1 animate-appear"
               textWidth="lg:w-[70%]"
               image={GroupImg2}
             />
             <AccelCard
               title="Insightful User Feedback"
               description="Our campaigns gather invaluable product, and market insights from your target customers through our experienced student marketers. These insights are compiled into a comprehensive document, empowering you to enhance your product value."
-              cnames="lg:h-[250px] bg-cr-gray-300 px-2 col-span-2 lg:col-span-1"
+              cnames="lg:h-[250px] bg-cr-gray-300 px-2 col-span-2 lg:col-span-1 animate-appear"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
             <AccelCard
               title="Access to Underserved Markets"
               description="Utilizing our network of student marketers, we can penetrate under-served markets with campaigns that are not only 10x more affordable but also highly effective, providing you with access to untapped opportunities."
-              cnames="lg:h-[250px] bg-cr-yellow-200 px-2 col-span-2 lg:col-span-1"
+              cnames="lg:h-[250px] bg-cr-yellow-200 px-2 col-span-2 lg:col-span-1 animate-appear"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
-            <div className="col-span-2 lg:h-[350px] bg-white h-fit py-8 lg:py-3 rounded-xl flex justify-center items-center">
+            <div className="col-span-2 lg:h-[350px] bg-white h-fit py-8 lg:py-3 rounded-xl flex justify-center items-center animate-appear">
               <div className="grid grid-rows-1 gap-4 lg:grid-cols-2 place-items-center h-fit lg:h-2/3">
                 <div className="w-[85%] h-full justify-center flex flex-col">
                   <h6 className="mb-4 text-2xl font-bold">
@@ -95,14 +95,14 @@ const GrowthXlr8: React.FC = () => {
             <AccelCard
               title="Engaging Local Merchants"
               description="Extend your reach beyond students to local merchants within campus communities. Our campaigns facilitate connections with these merchants through our student reps, expanding your market reach"
-              cnames="lg:h-[250px] bg-cr-yellow-200 px-2 col-span-2 lg:col-span-1"
+              cnames="lg:h-[250px] bg-cr-yellow-200 px-2 col-span-2 lg:col-span-1 animate-appear"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />
             <AccelCard
               title="Campus Representative Management"
               description="Establish a physical presence in campus communities by leveraging student representatives. You have the flexibility to manage them yourself or allow us to handle them, ensuring your objectives are met."
-              cnames="lg:h-[250px] bg-cr-pink-300 px-2 col-span-2 lg:col-span-1"
+              cnames="lg:h-[250px] bg-cr-pink-300 px-2 col-span-2 lg:col-span-1 animate-appear"
               textWidth="text-left grid lg:w-5/6 place-items-start"
               image=""
             />

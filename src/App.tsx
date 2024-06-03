@@ -23,7 +23,7 @@ function App() {
     <>
       <div className="h-screen py-4 lg:mb-8 top-section">
         <HeaderLayout />
-        <div className="flex flex-col items-center justify-center h-[90dvh] text-center hero-section">
+        <div className="flex flex-col items-center justify-center h-[90dvh] text-center hero-section animate-fadeIn">
           <div className="flex flex-col items-center justify-center w-full xl:w-2/3">
             <h1 className="text-3xl font-bold lg:text-6xl">
               Unlock <span className="text-forest-green-500">10x</span> Growth
@@ -55,11 +55,11 @@ function App() {
       <br />
       <section className="py-4 my-3 lg:my-8 campaign">
         <div className="w-[85%] mx-auto">
-          <h3 className="mb-4 text-2xl font-bold text-center lg:mb-8 lg:text-5xl">
+          <h3 className="mb-4 text-2xl font-bold text-center lg:mb-8 lg:text-5xl animate-appear">
             Our Campaign Channels
           </h3>
           <br />
-          <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-1">
+          <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-1 animate-appear">
             <div className="order-2 w-full lg:order-1">
               <img src={Group1} alt="grouped-img" className="w-[20rem]" />
             </div>
@@ -78,7 +78,7 @@ function App() {
             </div>
           </div>
           <br />
-          <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-14">
+          <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-14 animate-appear">
             <div className="flex flex-col items-start gap-4 lg:w-10/12">
               <h4 className="text-lg font-bold lg:text-3xl">
                 Influencer Model
@@ -98,7 +98,7 @@ function App() {
           </div>
           <br />
           <QuoteCard
-            bgColor="bg-cr-gray-250"
+            bgColor="bg-cr-gray-250 animate-appear"
             imgBgClass="bg-cover testimony-img"
             img={TestimonyLogo1}
             imgClass=""
@@ -111,12 +111,12 @@ function App() {
           />
 
           <br />
-          <div className="w-full my-8 text-2xl font-bold text-center lg:text-5xl lg:my-10">
+          <div className="w-full my-8 text-2xl font-bold text-center lg:text-5xl lg:my-10 animate-appear">
             <span className="w-full">
               3000+ students and merchants in communities reached for businesses
             </span>
           </div>
-          <div className="grid w-full gap-8 lg:grid-cols-3">
+          <div className="grid w-full gap-8 lg:grid-cols-3 animate-appear">
             <Card
               cardColor="bg-cr-gray-250 text-black h-[280px] lg:h-[400px]"
               cnames="flex flex-col justify-between items-start mt-4"
@@ -151,7 +151,7 @@ function App() {
             />
           </div>
           <br />
-          <div className="w-full my-10 text-2xl font-bold text-center lg:text-5xl lg:my-10">
+          <div className="w-full my-10 text-2xl font-bold text-center lg:text-5xl lg:my-10 animate-appear">
             <span className="w-full">Why Startups love us</span>
           </div>
           <WhyStartups />
@@ -159,10 +159,10 @@ function App() {
       </section>
       <br />
       <section className="h-[450px] bg-cr-teal-100 justify-center items-center gap-4 lg:gap-8 flex flex-col">
-        <h3 className="text-3xl font-semibold text-center lg:text-7xl lg:font-bold">
+        <h3 className="text-3xl font-semibold text-center lg:text-7xl lg:font-bold animate-appear">
           Sound too good to be true?
         </h3>
-        <span className="w-2/3 text-sm font-normal text-center lg:w-1/2 lg:text-lg text-cr-gray-600">
+        <span className="w-2/3 text-sm font-normal text-center lg:w-1/2 lg:text-lg text-cr-gray-600 animate-appear">
           We get that a lot. See it firsthand: Fill out a simple form for a
           detailed proposal in just 5 days, while others take weeks.
         </span>
@@ -173,14 +173,14 @@ function App() {
         />
       </section>
       <br />
-      <section className="py-4 my-10 versus">
+      <section className="py-4 my-10 versus animate-appear">
         <CampusReachVs />
       </section>
 
       <section className="my-10">
         <div className="w-[85%] mx-auto">
           <QuoteCard
-            bgColor="bg-[#0000001C]"
+            bgColor="bg-[#0000001C] animate-appear"
             imgBgClass="bg-cover ceo-img"
             img={LogoWithText}
             imgClass="px-1 bg-white rounded-lg"

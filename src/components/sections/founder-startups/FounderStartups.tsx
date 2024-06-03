@@ -10,7 +10,7 @@ import Charisol from "../../../assets/charisol-logo 1.png";
 
 const FounderStartups: React.FC = () => {
   return (
-    <div className="flex flex-col w-full gap-20 my-10 h-fit start-ups">
+    <div className="flex flex-col w-full gap-20 my-10 h-fit start-ups animate-appear">
         <h4 className="text-lg font-bold text-center md:text-2xl">
           Join the founders from fast-growing startups
         </h4>

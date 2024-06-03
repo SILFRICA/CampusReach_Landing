@@ -9,7 +9,7 @@ import Customerio from "../../assets/logos_customerio-icon.svg";
 
 const WhyStartups: React.FC = () => {
   return (
-    <div className="grid w-full gap-2 lg:gap-8 lg:grid-cols-4">
+    <div className="grid w-full gap-2 lg:gap-8 lg:grid-cols-4 animate-appear">
       <Card
         cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
         cnames="flex flex-col justify-between items-start mt-4"
