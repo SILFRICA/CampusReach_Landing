@@ -27,7 +27,7 @@ const CampusReachVs: React.FC = () => {
                   <th className="px-4 py-3">Benefits</th>
                   <th className="flex items-center justify-center gap-3 px-4 py-3 border bg-[#F1F9F5]">
                     <img src={Logo} alt="Logo" />
-                    <h1 className="text-sm font-bold text-forest-green-900">
+                    <h1 className="text-xs font-bold lg:text-sm text-forest-green-900">
                       CampusReach
                     </h1>
                   </th>

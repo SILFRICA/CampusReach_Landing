@@ -30,7 +30,7 @@ function App() {
               in Campus Communities
             </h1>
             <br />
-            <p className="w-full px-4 font-medium text-center text-cr-gray-600 lg:text-2xl xl:w-5/6">
+            <p className="w-full px-4 text-xs font-medium text-center lg:text-xl text-cr-gray-600">
               Leverage student marketers/influencers across 25 campuses to drive
               affordable and time-effective campaigns. We manage your campaign
               from start to finish to achieve your marketing goals in campus
