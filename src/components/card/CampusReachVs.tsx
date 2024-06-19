@@ -10,7 +10,7 @@ interface TableData {
 
 const CampusReachVs: React.FC = () => {
   return (
-    <div className="w-[85%] mx-auto">
+    <div className="w-[85%] mx-auto hidden md:block">
       <div className="w-full text-center">
         <small className="text-gray-300">CampusReach Vs Others</small>
         <h3 className="text-2xl font-bold lg:text-5xl">

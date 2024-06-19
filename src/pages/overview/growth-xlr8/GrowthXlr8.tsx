@@ -2,7 +2,7 @@ import React from 'react';
 import AccelCard from '../../../components/accelCard/AccelCard';
 import GroupImg1 from "../../../assets/Group 420.png";
 import GroupImg2 from "../../../assets/Group 421.png";
-import PieChart from "../../../assets/Group 7.svg";
+import PieChart from "../../../assets/piechart2.svg";
 
 const GrowthXlr8: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const GrowthXlr8: React.FC = () => {
           <h3 className="text-3xl font-bold text-center lg:text-5xl animate-appear">
             Accelerate Your Growth Across Campus Communities
           </h3>
-          <p className="mb-3 text-justify lg:text-center text-cr-gray-600 animate-appear">
+          <p className="mb-3 text-sm text-center lg:text-lg lg:text-center text-cr-gray-600 animate-appear">
             Launching impactful marketing campaigns in campus communities
             demands significant time and resources. Let CampusReach handle the
             heavy lifting for you, providing invaluable insights and data
@@ -78,13 +78,13 @@ const GrowthXlr8: React.FC = () => {
                   <div className="flex items-center justify-between lg:w-[80%] w-full gap-4">
                     <img src={PieChart} alt="chart" />
                     <ul className="flex flex-col justify-start">
-                      <li className="text-[#FF3A29] list-disc text-xl">
+                      <li className="text-xl list-disc text-forest-green-500">
                         <span className="text-black">UNN</span>
                       </li>
-                      <li className="text-[#FFB200] list-disc text-xl">
+                      <li className="text-[#9A79FB] list-disc text-xl">
                         <span className="text-black">UNIZIK</span>
                       </li>
-                      <li className="text-[#4339F2] list-disc text-xl">
+                      <li className="text-[#FBD779] list-disc text-xl">
                         <span className="text-black">ESUT</span>
                       </li>
                     </ul>

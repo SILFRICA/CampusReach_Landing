@@ -20,7 +20,7 @@ const WhyStartups: React.FC = () => {
       />
       <Card
         cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
-        cnames="flex flex-col justify-between items-end lg:items-start mt-4"
+        cnames="flex flex-col justify-between items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={MoneyBag}
         title="Affordable"
@@ -44,7 +44,7 @@ const WhyStartups: React.FC = () => {
       />
       <Card
         cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
-        cnames="flex flex-col justify-between items-end lg:items-start mt-4"
+        cnames="flex flex-col justify-between items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={GrowthBook}
         title="Rapid Growth"
@@ -52,7 +52,7 @@ const WhyStartups: React.FC = () => {
       />
       <Card
         cardColor="bg-cr-gray-210 text-black h-[250px] lg:h-[300px] col-span-2 lg:col-span-1"
-        cnames="flex flex-col justify-between items-end lg:items-start mt-4"
+        cnames="flex flex-col justify-between items-start mt-4"
         iconColor="bg-white h-10 w-10"
         img={PersonIdea}
         title="Creators-brand  fit"

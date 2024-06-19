@@ -2,9 +2,9 @@
 
 $wrapper-width: 90%;
 $max-wrapper-width: 1536px;
-$item-width: 100px;
+$item-width: 56px;
 $item-height: 100px;
-$item-duration: 30s;
+$item-duration: 35s;
 
 .infinite-wrapper {
   width: $wrapper-width;
@@ -22,7 +22,7 @@ $item-duration: 30s;
     rgba(0, 0, 0, 0)
   );
 
-  div {
+  img {
     position: absolute;
     left: max(calc(#{$item-width} * 7), 100%);
     animation-name: scrollLeft;

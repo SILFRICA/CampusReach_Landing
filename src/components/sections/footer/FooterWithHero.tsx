@@ -6,12 +6,12 @@ import { footLinks } from "./FooterLinks";
 const FooterWithHero: React.FC = () => {
   return (
     <footer className="flex flex-col items-center justify-center w-full gap-4 py-20 mt-8 text-white bg-emerald-950 lg:gap-8">
-      <div className="w-[85%] mx-auto">
+      <div className="lg:w-[85%] w-[95%] mx-auto">
         <div className="flex flex-col items-center w-full text-center animate-appear">
           <h3 className="text-2xl font-bold lg:w-2/3 lg:text-5xl">
             Leave Traditional Marketing Agencies & Freelancers Behind
           </h3>
-          <p className="lg:w-[60%] my-6">
+          <p className="lg:w-[60%] w-full my-6 text-sm lg:text-base">
             Tired of the hassle and limitations of traditional agencies? Bid
             slow processes farewell and hello to{" "}
             <span className="text-forest-green-500">CampusReach</span>! Our
@@ -44,14 +44,14 @@ const FooterWithHero: React.FC = () => {
               >
                 <h6 className="mb-6 text-base font-bold">{item.title}</h6>
                 {item.links.map((link) => (
-                  <a href="#" className="hover:text-forest-green-500">{link}</a>
+                  <a href="#" className="text-gray-300 hover:text-forest-green-500">{link}</a>
                 ))}
               </div>
             ))}
             <div className="flex flex-col text-sm">
                 <h6 className="mb-6 text-base font-bold">Company</h6>
-                <a href="#" className="hover:text-forest-green-500">About</a>
-                <a href="#" className="hover:text-forest-green-500">Contact</a>
+                <a href="#" className="text-gray-300 hover:text-forest-green-500">About</a>
+                <a href="#" className="text-gray-300 hover:text-forest-green-500">Contact</a>
             </div>
           </div>
         </div>

@@ -30,14 +30,14 @@ const Footer: React.FC = () => {
               >
                 <h6 className="mb-6 text-base font-bold">{item.title}</h6>
                 {item.links.map((link) => (
-                  <a href="#" className="hover:text-forest-green-500">{link}</a>
+                  <a href="#" className="text-gray-200 hover:text-forest-green-500">{link}</a>
                 ))}
               </div>
             ))}
             <div className="flex flex-col text-sm">
                 <h6 className="mb-6 text-base font-bold">Company</h6>
-                <a href="#" className="hover:text-forest-green-500">About</a>
-                <a href="#" className="hover:text-forest-green-500">Contact</a>
+                <a href="#" className="text-gray-200 hover:text-forest-green-500">About</a>
+                <a href="#" className="text-gray-200 hover:text-forest-green-500">Contact</a>
             </div>
           </div>
         </div>
