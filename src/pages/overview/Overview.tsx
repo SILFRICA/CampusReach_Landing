@@ -77,7 +77,7 @@ const Overview: React.FC = () => {
           </div>
           <br />
           <div className="grid grid-cols-1 gap-4 mb-10 lg:grid-cols-2 place-items-center lg:mb-14 animate-appear">
-            <div className="flex flex-col items-start order-1 gap-4 lg:w-10/12 lg:order-2">
+            <div className="flex flex-col items-start order-2 gap-4 lg:order-1 lg:w-10/12">
               <h4 className="text-lg font-bold lg:text-3xl">
                 Influencer Model
               </h4>
@@ -90,7 +90,7 @@ const Overview: React.FC = () => {
               </span>
               <Button kind="button" title="Learn More" cnames="bg-black" />
             </div>
-            <div className="w-full mb-4 lg:flex lg:justify-end">
+            <div className="order-1 w-full mb-4 lg:flex lg:justify-end lg:order-2">
               <img src={Group2} alt="grouped-img" className="w-[20rem]" />
             </div>
           </div>
