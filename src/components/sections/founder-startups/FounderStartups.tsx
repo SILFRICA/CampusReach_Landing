@@ -19,7 +19,7 @@ const FounderStartups: React.FC = () => {
     Charisol,
   ];
   return (
-    <div className="flex flex-col justify-around w-full my-10 h-fit start-ups animate-appear">
+    <div className="flex flex-col justify-around w-full mb-10 -mt-6 lg:mt-0 h-fit start-ups animate-appear">
       <h4 className="text-xl font-bold text-center md:text-2xl">
         Join the founders from fast-growing startups
       </h4>
@@ -28,7 +28,7 @@ const FounderStartups: React.FC = () => {
           <img
             src={fLogo}
             alt="founders-logo"
-            className={`w-14 md:w-28 lg:h-16 rounded-[20px] item-${index + 1}`}
+            className={`w-14 md:w-28 h-10 lg:h-16 rounded-[8px] lg:rounded-[20px] item-${index + 1}`}
           />
         ))}
       </div>

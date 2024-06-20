@@ -20,7 +20,7 @@ import QuoteCard from "../../components/card/QuoteCard";
 const Overview: React.FC = () => {
   return (
     <>
-      <div className="h-screen py-4 lg:mb-8 top-section">
+      <div className="h-auto py-4 lg:mb-8 top-section">
         <div className="flex flex-col items-center justify-center h-[90dvh] text-center hero-section animate-fadeIn">
           <div className="flex flex-col items-center justify-center w-full xl:w-2/3">
             <h1 className="text-4xl font-bold lg:text-6xl">
