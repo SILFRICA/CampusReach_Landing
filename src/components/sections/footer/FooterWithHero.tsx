@@ -5,7 +5,7 @@ import { footLinks } from "./FooterLinks";
 
 const FooterWithHero: React.FC = () => {
   return (
-    <footer className="flex flex-col items-center justify-center w-full gap-4 py-20 mt-8 text-white bg-emerald-950 lg:gap-8">
+    <footer className="flex flex-col items-center justify-center w-full gap-4 py-20 mt-8 text-white bg-stone-900 lg:gap-8">
       <div className="lg:w-[85%] w-[95%] mx-auto">
         <div className="flex flex-col items-center w-full text-center animate-appear">
           <h3 className="text-2xl font-bold lg:w-2/3 lg:text-5xl">
@@ -39,19 +39,26 @@ const FooterWithHero: React.FC = () => {
           </div>
           <div className="flex flex-row flex-wrap justify-start w-full gap-8 lg:justify-end lg:gap-10 links">
             {footLinks.map((item) => (
-              <div
-                className="flex flex-col text-sm"
-              >
+              <div className="flex flex-col text-sm">
                 <h6 className="mb-6 text-base font-bold">{item.title}</h6>
                 {item.links.map((link) => (
-                  <a href="#" className="text-gray-300 hover:text-forest-green-500">{link}</a>
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:text-forest-green-500"
+                  >
+                    {link}
+                  </a>
                 ))}
               </div>
             ))}
             <div className="flex flex-col text-sm">
-                <h6 className="mb-6 text-base font-bold">Company</h6>
-                <a href="#" className="text-gray-300 hover:text-forest-green-500">About</a>
-                <a href="#" className="text-gray-300 hover:text-forest-green-500">Contact</a>
+              <h6 className="mb-6 text-base font-bold">Company</h6>
+              <a href="#" className="text-gray-300 hover:text-forest-green-500">
+                About
+              </a>
+              <a href="#" className="text-gray-300 hover:text-forest-green-500">
+                Contact
+              </a>
             </div>
           </div>
         </div>

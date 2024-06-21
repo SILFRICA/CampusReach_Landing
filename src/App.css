@@ -77,3 +77,9 @@
 .card {
   padding: 1rem;
 }
+
+.second-section {
+  background-image: url(assets/wavy1.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
